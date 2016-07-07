@@ -34,7 +34,7 @@
 		setTimeout(function(){
 			var marginLeft = parseInt(ball.style.marginLeft,10);
 			if(marginLeft == distance){
-				callback && callback()
+				callback && callback() /*是为了判断callback是否存在，不然直接写callback()*/
 			}else{
 				if(marginLeft < distance){
 					marginLeft++
